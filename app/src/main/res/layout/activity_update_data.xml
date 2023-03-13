@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.UpdateDataActivity">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="44dp"
+            android:gravity="center"
+            android:text="Update Data"
+            android:textSize="42dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/edittext"
+            android:hint="Name"
+
+            app:layout_constraintTop_toBottomOf="@+id/tv1"/>
+
+        <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/edittext"
+            android:hint="Age"
+            app:layout_constraintTop_toBottomOf="@+id/edtName"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/edittext"
+            android:hint="Email"
+            app:layout_constraintTop_toBottomOf="@+id/edtAge"/>
+
+        <EditText
+            android:id="@+id/edtSdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/edittext"
+            android:hint="Sđt"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail"/>
+
+        <TextView
+            android:id="@+id/btnUpdateData"
+            style="@style/button"
+            android:gravity="center"
+            android:text="Update"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSdt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.MainActivity">
+
+        <EditText
+            style="@style/edittext"
+            android:id="@+id/edFullName"
+            android:hint="@string/full_name"
+            />
+        <EditText
+            style="@style/edittext"
+            android:id="@+id/edAge"
+            android:hint="@string/age"
+            />
+        <EditText
+            style="@style/edittext"
+            android:id="@+id/edSdt"
+            android:hint="@string/number_phone"
+            />
+        <EditText
+            style="@style/edittext"
+            android:id="@+id/edEmail"
+            android:hint="@string/email"
+            />
+        <TextView
+            android:id="@+id/btnLogin"
+            style="@style/button"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+</layout>
